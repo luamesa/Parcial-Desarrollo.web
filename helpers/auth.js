@@ -3,7 +3,7 @@
 let jwt = require('jwt-simple');
 let moment = require ('moment');
 
-let secret = 'Esasfomowemf212##"!sasdwEsas';
+let secret = process.env.JWT_SECRET;
 
 function generateToken(user){
     let payload = {
